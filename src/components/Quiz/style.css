@@ -1,0 +1,71 @@
+.container {
+  width: clamp(300px, 50%, 600px);
+  height: 500px;
+  background-color: #3a3a3a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  width: 90%;
+}
+
+.title {
+  margin: 50px 0 20px;
+  height: 70px;
+  color: #fff;
+  text-align: left;
+}
+
+.container_btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+button {
+  width: 100%;
+  background-color: #0d0d0d;
+  color: #fff;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  text-indent: 20px;
+  cursor: pointer;
+}
+
+.title_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #fff;
+  row-gap: 50px;
+}
+
+.bar_progress {
+  width: 80%;
+  height: 5px;
+  background-color: #f2f2f296;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+.bar_filled {
+  width: 0%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 0 #fff inset, 0 0 7px 0 #fff;
+}
